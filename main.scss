@@ -1,35 +1,37 @@
-$font-family-sans-serif: (Roboto-Regular,  Arial, Helvetica, sans-serif);
+$font-family-sans-serif: ('Roboto-Regular', fallback, sans-serif);
 $theme-colors: (
-    "primary": #F99D3A
+    "primary": #000
 );
 
 //Import all bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+//New Variables
+$gradient-color: linear-gradient(5.37deg, #81B9CB 3.96%, #87A5BD 35.96%, #88B7B2 52.45%, #B8A2CB 76.8%, #98AFD9 96.09%);
+
 //Fonts
 @font-face {
     font-family: 'DMSerifDisplay-Regular';
-    src: url('assets/Fonts/DMSerifDisplay-Regular.woff2') format('woff2'),
-            url('assets/Fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+    src: url('./assets/Fonts/DMSerifDisplay-Regular.woff2') format('woff2'),
+            url('.assets/Fonts/DMSerifDisplay-Regular.ttf') format('truetype');
     }
 
 @font-face {
     font-family: 'Overpass-Regular';
-    src: url('assets/Fonts/Overpass-Regular.woff2') format('woff2'),
-            url('assets/Fonts/Overpass-Regular.ttf') format('truetype');
+    src: url('./assets/Fonts/Overpass-Regular.woff2') format('woff2'),
+            url('./assets/Fonts/Overpass-Regular.ttf') format('truetype');
     }
 
 @font-face {
     font-family: 'Overpass-Black';
-    src: url('WebsiteTest/assets/Fonts/Overpass-Black.woff2') format('woff2'),
-            url('WebsiteTest/assets/Fonts/Overpass-Black.ttf') format('truetype');
+    src: url('./assets/Fonts/Overpass-Black.woff2') format('woff2'),
+            url('./assets/Fonts/Overpass-Black.ttf') format('truetype');
     }
 
 @font-face {
     font-family: 'Roboto-Regular';
-    src: url('../Fonts/Roboto-Regular.woff2') format('woff2'),
-            url('../Fonts/Roboto-Regular.ttf') format('truetype');
+    src: url('./assets/Fonts/Roboto-Regular.woff2') format('woff2'),
+            url('./assets/Fonts/Roboto-Regular.ttf') format('truetype');
     }
 
 //Media Query Manager
@@ -93,8 +95,52 @@ html, body {
 }
 
 body{
-    font-family: 'Roboto-Regular', sans-serif;
+    font-family: 'Roboto-Regular', fallback, sans-serif;
 }
+
+.dm-serif{   
+    font-family: 'DMSerifDisplay-Regular', fallback, sans-serif;
+}
+
+.overpass-regular{
+    font-family: 'Overpass-Regular', fallback, sans-serif;
+}
+
+.overpass-black{
+    font-family: 'Overpass-Black', fallback, sans-serif;
+}
+
+h1{
+
+    font-family: 'Overpass-Black', fallback, sans-serif;
+    font-size: 2rem;
+}
+
+h2{
+    font-family: 'DMSerifDisplay-Regular', fallback, serif;
+    font-size: 3.5rem;
+}
+
+h3{
+    font-family: 'DMSerifDisplay-Regular', fallback, serif;
+    font-size: 3.125rem;
+}
+
+h4{
+    font-family: 'Overpass-Regular', fallback, sans-serif;
+    font-size: 2.5rem;
+}
+
+h5{
+    font-family: 'Overpass-Black', fallback, sans-serif;
+    font-size: 1.875rem;
+}
+
+h6{
+    font-family: 'Roboto-Regular', fallback, sans-serif;
+    font-size: 1.5rem;
+}
+
 .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -105,7 +151,76 @@ body{
     padding-left: 20px;
 }
 
+//Gradient Colors
 .gradient-bg{
-    background: linear-gradient(5.37deg, #81B9CB 3.96%, #87A5BD 35.96%, #88B7B2 52.45%, #B8A2CB 76.8%, #98AFD9 96.09%);
+    background: $gradient-color;
     color: #ffffff;
+}
+
+.gradient-color{
+    background: $gradient-color;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-border{
+    position: relative;
+    padding: 30% 2em;
+    box-sizing: border-box;
+
+    $border: 2px;
+    color: #FFF;
+    background: #fff;
+    background-clip: padding-box; 
+    border-top: solid $border transparent; 
+    border-bottom: solid $border transparent; 
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -$border; /* !importanté */
+    background: $gradient-color;
+  }
+}
+
+//Spacing
+.padding-3rem{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.spacer-lg{
+    height: 4rem;
+}
+
+.spacer-md{
+    height: 2rem;
+}
+
+.spacer-sm{
+    height: 1rem;
+}
+
+.row-width-60 {    
+    width: 60%;
+    margin: 0 auto;
+}
+
+@include laptop--sm {
+    .row-width-60 {
+        width: 100%;
+    }
+}
+
+#above-the-fold{
+    height: calc(100vh - 300px);
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
 }

@@ -9918,8 +9918,6 @@ html, body {
 }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
-  padding-top: 60px;
-  padding-bottom: 60px;
   padding-right: 0;
   padding-left: 0;
 }

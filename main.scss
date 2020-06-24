@@ -1,3 +1,7 @@
+$theme-colors: (
+    "primary": #F99D3A
+);
+
 //Required
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
@@ -9,3 +13,80 @@
 @import "node_modules/bootstrap/scss/images";
 @import "node_modules/bootstrap/scss/code";
 @import "node_modules/bootstrap/scss/grid";
+
+//Media Query Manager
+@mixin laptop--lg {
+    @media only screen and (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin laptop--md {
+    @media only screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin laptop--sm {
+    @media only screen and (max-width:991px) {
+        @content;
+    }
+}
+
+@mixin tablet--lg {
+    @media only screen and (max-width: 780px) {
+        @content;
+    }
+}
+
+@mixin tablet--md {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tablet--sm {
+    @media only screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin mobile--lg {
+    @media only screen and (max-width: 425px) {
+        @content;
+    }
+}
+
+@mixin mobile--md {
+    @media only screen and (max-width: 375px) {
+        @content;
+    }
+}
+
+//Global Styles
+//Code added to body to avoid excess white space on the right of the page
+//Body
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 1260px;
+}
+
+.gradient-bg{
+    background: linear-gradient(5.37deg, #81B9CB 3.96%, #87A5BD 35.96%, #88B7B2 52.45%, #B8A2CB 76.8%, #98AFD9 96.09%);
+}

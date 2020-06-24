@@ -2,18 +2,8 @@ $theme-colors: (
     "primary": #F99D3A
 );
 
-//Required
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins";
-@import "node_modules/bootstrap/scss/utilities";
-
-//Optional
-@import "node_modules/bootstrap/scss/reboot";
-@import "node_modules/bootstrap/scss/type";
-@import "node_modules/bootstrap/scss/images";
-@import "node_modules/bootstrap/scss/code";
-@import "node_modules/bootstrap/scss/grid";
+//Import all bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
 
 //Media Query Manager
 @mixin laptop--lg {

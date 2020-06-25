@@ -1,0 +1,12 @@
+H1 - Overpass Black - 32
+H2 - DM Serif Display - 56
+H3 - DM Serif Display - 50
+H4 - Overpass Regular - 40
+H5 - Overpass Black -30
+H6 - Roboto - 24
+p - Roboto - 16
+
+<div>
+                        <img class="img-fluid" src="./assets/stars.svg">
+                        <span class="overpass-regular"><u>Over 500 reviews</u></span>
+                    </div>

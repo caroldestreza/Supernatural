@@ -10863,6 +10863,10 @@ body {
   font-family: 'Overpass-Black', fallback, sans-serif;
 }
 
+.roboto {
+  font-family: 'Roboto-Regular', fallback, sans-serif;
+}
+
 h1 {
   font-family: 'Overpass-Black', fallback, sans-serif;
   font-size: 2rem;
@@ -10903,6 +10907,38 @@ h6 {
   padding-left: 20px;
 }
 
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+header nav .nav-link {
+  float: right;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+footer h6, footer li {
+  font-family: 'Overpass-Regular', fallback, sans-serif;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
 .gradient-bg {
   background: linear-gradient(5.37deg, #81B9CB 3.96%, #87A5BD 35.96%, #88B7B2 52.45%, #B8A2CB 76.8%, #98AFD9 96.09%);
   color: #ffffff;
@@ -10939,6 +10975,11 @@ h6 {
   background: linear-gradient(5.37deg, #81B9CB 3.96%, #87A5BD 35.96%, #88B7B2 52.45%, #B8A2CB 76.8%, #98AFD9 96.09%);
 }
 
+.purple-bg {
+  background: #8D8298;
+  color: #fff;
+}
+
 .padding-3rem {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -10961,10 +11002,30 @@ h6 {
   margin: 0 auto;
 }
 
+.row-width-80 {
+  width: 80%;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 991px) {
   .row-width-60 {
     width: 100%;
   }
+  .row-width-80 {
+    width: 100%;
+  }
+}
+
+.xy-center {
+  text-align: center;
+  margin: auto 0;
+}
+
+.img_object-fit {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 #above-the-fold {
@@ -10975,5 +11036,184 @@ h6 {
   -ms-flex-align: center;
   -webkit-box-align: center;
   align-items: center;
+}
+
+.panel-group {
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 780px) {
+  .panel-group {
+    width: 100%;
+  }
+}
+
+.panel-heading {
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.panel-body {
+  padding: 15px 0;
+}
+
+.panel-title > a, .panel-title > a:active {
+  display: block;
+  padding: 15px 0 5px 0;
+  word-spacing: 3px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.panel-heading a:before {
+  content: "＋";
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 400;
+  float: right;
+}
+
+.panel-heading.active a:before {
+  content: '—';
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#counters-granite-table .table-bordered th, #counters-granite-table .table-bordered td {
+  border: 2px solid #C0A5CB;
+}
+
+#counters-granite-table table {
+  text-align: center;
+}
+
+#counters-granite-table table thead {
+  background-color: #C0A5CB;
+  color: #fff;
+  font-family: 'Overpass-Regular', fallback, sans-serif !important;
+  font-weight: 700;
+}
+
+#counters-granite-table table tbody {
+  background-color: #fff;
+  color: #C0A5CB;
+  font-family: 'Overpass-Regular', fallback, sans-serif !important;
+}
+
+#counters-granite-table table tbody td {
+  vertical-align: middle;
+}
+
+#steps-section h3 {
+  font-family: 'Overpass-Regular', fallback, sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+#steps-section p {
+  font-family: 'Overpass-Regular', fallback, sans-serif;
+  font-size: 1rem;
+}
+
+.supernatural-table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  border-radius: 5px;
+  color: #C0A5CB;
+  font-family: 'Overpass-Regular', fallback, sans-serif;
+}
+
+.supernatural-table tr {
+  border-bottom: 1px solid #C0A5CB;
+  padding: .35em;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.supernatural-table th, .supernatural-table td {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #C0A5CB;
+}
+
+.supernatural-table .supernatural-row {
+  background-color: #C0A5CB;
+  color: #fff;
+}
+
+.supernatural-table .supernatural-row td {
+  border: 2px solid #fff;
+}
+
+.supernatural-table .supernatural-row td:first-child {
+  border: none;
+}
+
+.supernatural-table .supernatural-row td:last-child {
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .supernatural-table {
+    border: 0;
+  }
+  .supernatural-table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .supernatural-table tr {
+    border-bottom: 1px solid #C0A5CB;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .supernatural-table td {
+    border-bottom: 1px solid #C0A5CB;
+    display: block;
+    font-size: .8rem;
+    text-align: right;
+  }
+  .supernatural-table th, .supernatural-table td {
+    border: none;
+    border-bottom: 1px solid #C0A5CB;
+  }
+  .supernatural-table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .supernatural-table td:last-child {
+    border-bottom: 0;
+  }
+  .supernatural-table .supernatural-row {
+    background-color: #C0A5CB;
+    color: #fff;
+  }
+  .supernatural-table .supernatural-row td {
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+  .supernatural-table .supernatural-row td:first-child {
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+  .supernatural-table .supernatural-row td:last-child {
+    border: none;
+    border-bottom: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

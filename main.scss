@@ -171,15 +171,17 @@ header{
 }
 
 footer{
+    font-family: 'Overpass-Regular', fallback, sans-serif;
+
     ul{
         list-style-type: none;
         padding-left: 0;
         margin-left: 0;
     }
 
-    h6, li{
-        font-family: 'Overpass-Regular', fallback, sans-serif;
+    h6, li{     
         font-size: 1rem;
+        font-family: 'Overpass-Regular', fallback, sans-serif;
     }
 
     a{
@@ -192,6 +194,15 @@ footer{
 
     small{
         font-family: 'Overpass-Regular', fallback, sans-serif;
+    }
+
+    .form-control
+    {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        border-radius: 0;
+        color: #fff;
     }
 }
 //Gradient Colors
@@ -242,7 +253,6 @@ footer{
         position: absolute;
     }
 
-
     .ribbon {
         width: 220px;
         height: 40px;
@@ -263,8 +273,6 @@ footer{
         color: #fff;
     }
 }
-
-
 
 //purple background
 .purple-bg{
@@ -320,6 +328,23 @@ footer{
     margin: auto 0;
 }
 
+.brother-wrap{
+    padding: 20%;
+    margin-bottom: 100px;
+}
+
+.floating-img-center {
+    position: absolute;
+    left: 50%;
+}
+
+.poly-svg{
+    position: relative;
+    left: -50%;
+    z-index: 2;
+    bottom: 150px;
+}
+
 
 .img_object-fit {
     -o-object-fit: cover;
@@ -331,6 +356,8 @@ footer{
 .align-right{
     padding-left: 9%;
     padding-right: 9%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 } 
 
 @include tablet--lg
@@ -339,18 +366,6 @@ footer{
         padding-left: 20px;
         padding-right: 20px;
     } 
-}
-
-.panel-group{
-    width: 60%;
-    margin: 0 auto;
-}
-
-@include tablet--lg
-{
-    .panel-group{
-        width: 100%;
-    }
 }
 
 //Above the Fold
@@ -391,10 +406,22 @@ footer{
 }
 
 //Panel Collapse
+.panel-group{
+    width: 60%;
+    margin: 0 auto;
+}
+
+@include tablet--lg
+{
+    .panel-group{
+        width: 100%;
+    }
+}
+
 .panel-heading {
     padding: 0;
     border: 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
 }
 
 .panel-body{

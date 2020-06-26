@@ -10897,7 +10897,7 @@ h6 {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 780px) {
   h1 {
     font-family: 'Overpass-Black', fallback, sans-serif;
     font-size: 2rem;

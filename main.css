@@ -10897,6 +10897,33 @@ h6 {
   font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-family: 'Overpass-Black', fallback, sans-serif;
+    font-size: 2rem;
+  }
+  h2 {
+    font-family: 'DMSerifDisplay-Regular', fallback, serif;
+    font-size: 2rem;
+  }
+  h3 {
+    font-family: 'DMSerifDisplay-Regular', fallback, serif;
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-family: 'Overpass-Regular', fallback, sans-serif;
+    font-size: 2rem;
+  }
+  h5 {
+    font-family: 'Overpass-Black', fallback, sans-serif;
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-family: 'Roboto-Regular', fallback, sans-serif;
+    font-size: 1rem;
+  }
+}
+
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
   padding-right: 0;
   padding-left: 0;

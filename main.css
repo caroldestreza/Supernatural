@@ -11349,4 +11349,18 @@ footer .form-control::-ms-input-placeholder {
     border-bottom: none;
   }
 }
+
+.hexa-btn {
+  background-image: url("./assets/button-bg.svg");
+  border: none;
+  padding: 10px 22px;
+  min-width: 100px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+.hexa-btn:hover {
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */

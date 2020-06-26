@@ -411,19 +411,6 @@ footer{
     }
 }
 
-//Panel Collapse
-// .panel-group{
-//     width: 60%;
-//     margin: 0 auto;
-// }
-
-// @include tablet--lg
-// {
-//     .panel-group{
-//         width: 100%;
-//     }
-// }
-
 .panel-heading {
     padding: 0;
     border: 0;
@@ -604,5 +591,17 @@ footer{
 }
 
 
+.hexa-btn {
+    background-image: url("./assets/button-bg.svg");
+    border: none;
+    padding: 10px 22px;
+    min-width: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
 
+    &:hover{
+        color: #fff;
+    }
+}
 

@@ -10922,6 +10922,11 @@ header .navbar-light .navbar-toggler {
 
 footer {
   font-family: 'Overpass-Regular', fallback, sans-serif;
+  /* WebKit, Blink, Edge */
+  /* Mozilla Firefox 4 to 18 */
+  /* Mozilla Firefox 19+ */
+  /* Internet Explorer 10-11 */
+  /* Microsoft Edge */
 }
 
 footer ul {
@@ -10953,6 +10958,26 @@ footer .form-control {
   border-bottom: 1px solid #fff;
   border-radius: 0;
   color: #fff;
+}
+
+footer .form-control::-webkit-input-placeholder {
+  color: white;
+}
+
+footer .form-control:-moz-placeholder {
+  color: white;
+}
+
+footer .form-control::-moz-placeholder {
+  color: white;
+}
+
+footer .form-control:-ms-input-placeholder {
+  color: white;
+}
+
+footer .form-control::-ms-input-placeholder {
+  color: white;
 }
 
 .gradient-bg {
@@ -11155,17 +11180,6 @@ footer .form-control {
   letter-spacing: normal;
   color: #ffffff;
   text-transform: uppercase;
-}
-
-.panel-group {
-  width: 60%;
-  margin: 0 auto;
-}
-
-@media only screen and (max-width: 780px) {
-  .panel-group {
-    width: 100%;
-  }
 }
 
 .panel-heading {

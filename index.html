@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    
     <header>
         <div class="container-fluid py-1 gradient-bg">
             <div class="container text-center" style="vertical-align: middle;">
@@ -18,34 +17,57 @@
         </div>
         <div class="container-fluid" style="background: #fff;">
             <div class="container">
-                <nav class="navbar px-0">
+                <nav class="navbar navbar-expand-lg navbar-light px-0">
                     <a class="navbar-brand" href="/"><img class="img-fluid" src="./assets/logo.svg" alt="Supernatural"
                             title="Supernatural" /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                    <a class="nav-link" aria-expanded="true" href="/">
-                        GET 35% OFF →
-                    </a>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-expanded="true" href="/">
+                                    GET 35% OFF →
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </nav>
             </div>
         </div>
     </header>
 
+    <!--Above the Fold-->
     <div class="container-fluid" id="above-the-fold">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 my-auto">
+                <div class="container my-5">
                     <h1 class="text-uppercase">Meet the first certified non-toxic cleaner, made from 100% all-natural
                         ingredients.</h1>
                     <p class="overpass-regular">For a limited-time only, get <span class="overpass-black">35% off</span>
                         the starter set.</p>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 lightgray-bg">
+                <div class="container kv-right">
+                    <img srcset="./assets/kv.jpg 480w,  
+                                ./assets/kv@2x.jpg 800w" sizes="(max-width: 600px) 480px, 800px"
+                        src="./assets/kv@3x.jpg" class="img-fluid " alt="Key Visual">
+                    <div class="floating-img">
+                        <div class="img-interior">
+                            <p class="img-text-style overpass-regular"><b>35%</b><br>OFF</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!--Why clean with Supernatural?-->
     <div class="container-fluid padding-3rem">
         <div class="container text-center">
             <h2>Why clean with Supernatural?</h2>
@@ -59,12 +81,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="container">
-
-        </div>
-    </div>
-
+    <!--Goop-->
     <div class="container-fluid padding-3rem gradient-border">
         <div class="container">
             <div class="row row-width-60">
@@ -87,7 +104,7 @@
                 <br>Say hello to Supernatural.</h2>
             <div class="spacer-lg"></div>
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-3">
                     <h4>Supernatural Starter Kit</h4>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-12">
@@ -102,17 +119,17 @@
 
                     <!-- Product Details -->
                     <div class="row">
-                        <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-2">
                             <h6 class="dm-serif">4</h6>
                         </div>
-                        <div class="col-lg-11 col-md-11 col-sm-10 col-10">
+                        <div class="col-lg-11 col-md-11 col-sm-11 col-10">
                             <p>Supernatural resuable frosted-glass spray bottles for each suface.</p>
                         </div>
 
-                        <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-2">
                             <h6 class="dm-serif">4</h6>
                         </div>
-                        <div class="col-lg-11 col-md-11 col-sm-10 col-10">
+                        <div class="col-lg-11 col-md-11 col-sm-11 col-10">
                             <p>Supernatural plant powered surface concentrates:</p>
                             <ul>
                                 <li>Counters + Granite</li>
@@ -139,11 +156,19 @@
                     <p>or 4 interest-free installments of $13.13 by <span><img class="img-fluid"
                                 src="./assets/afterpay-logo.png"></span> <a href="/" class="small"><u>More Info</u></a>
                     </p>
-
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-
+                    <div class="wrap lightgray-bg p-5">
+                        <span class="ribbon">BEST SELLER</span>
+                        <img srcset="./assets/products.jpg 480w,  
+                                ./assets/products@2x.jpg 800w" sizes="(max-width: 600px) 480px, 800px"
+                        src="./assets/products@2x.jpg" 
+                        style="mix-blend-mode: multiply;"
+                        class="img-fluid" 
+                        alt="Supernatural Products">
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -378,10 +403,10 @@
                                 alt="check"></td>
                         <td data-label="Plant-Based Ingredients"><img class="img-fluid" src="./assets/check.svg"
                                 alt="check"></td>
-                        <td data-label="Lab-tested Cleaner"><img class="img-fluid" src="./assets/cross.svg"
-                                    alt="check"></td>
+                        <td data-label="Lab-tested Cleaner"><img class="img-fluid" src="./assets/cross.svg" alt="check">
+                        </td>
                         <td data-label="100% money-back guarantee"><img class="img-fluid" src="./assets/check.svg"
-                                        alt="check"></td>
+                                alt="check"></td>
                     </tr>
 
                     <tr>
@@ -392,10 +417,10 @@
                                 alt="check"></td>
                         <td data-label="Plant-Based Ingredients"><img class="img-fluid" src="./assets/cross.svg"
                                 alt="check"></td>
-                        <td data-label="Lab-tested Cleaner"><img class="img-fluid" src="./assets/check.svg"
-                                    alt="check"></td>
+                        <td data-label="Lab-tested Cleaner"><img class="img-fluid" src="./assets/check.svg" alt="check">
+                        </td>
                         <td data-label="100% money-back guarantee"><img class="img-fluid" src="./assets/cross.svg"
-                                        alt="check"></td>
+                                alt="check"></td>
                     </tr>
 
                     <tr>
@@ -406,10 +431,10 @@
                                 alt="check"></td>
                         <td data-label="Plant-Based Ingredients"><img class="img-fluid" src="./assets/cross.svg"
                                 alt="check"></td>
-                        <td data-label="Lab-tested Cleaner"><img class="img-fluid" src="./assets/check.svg"
-                                    alt="check"></td>
+                        <td data-label="Lab-tested Cleaner"><img class="img-fluid" src="./assets/check.svg" alt="check">
+                        </td>
                         <td data-label="100% money-back guarantee"><img class="img-fluid" src="./assets/cross.svg"
-                                        alt="check"></td>
+                                alt="check"></td>
                     </tr>
 
                     <tr>
@@ -420,10 +445,10 @@
                                 alt="check"></td>
                         <td data-label="Plant-Based Ingredients"><img class="img-fluid" src="./assets/check.svg"
                                 alt="check"></td>
-                        <td data-label="Lab-tested Cleaner"><img class="img-fluid" src="./assets/check.svg"
-                                    alt="check"></td>
+                        <td data-label="Lab-tested Cleaner"><img class="img-fluid" src="./assets/check.svg" alt="check">
+                        </td>
                         <td data-label="100% money-back guarantee"><img class="img-fluid" src="./assets/cross.svg"
-                                        alt="check"></td>
+                                alt="check"></td>
                     </tr>
 
                     <tr>
@@ -434,12 +459,12 @@
                                 alt="check"></td>
                         <td data-label="Plant-Based Ingredients"><img class="img-fluid" src="./assets/check.svg"
                                 alt="check"></td>
-                        <td data-label="Lab-tested Cleaner"><img class="img-fluid" src="./assets/check.svg"
-                                    alt="check"></td>
+                        <td data-label="Lab-tested Cleaner"><img class="img-fluid" src="./assets/check.svg" alt="check">
+                        </td>
                         <td data-label="100% money-back guarantee"><img class="img-fluid" src="./assets/cross.svg"
-                                        alt="check"></td>
+                                alt="check"></td>
                     </tr>
-   
+
                 </tbody>
             </table>
         </div>
@@ -459,7 +484,8 @@
                     <img class="img-fluid my-3" src="./assets/leaf.svg">
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 my-auto">
-                    <p class="overpass-regular my-3" style="font-size: 1.5rem;">With your support, Supernatural gives back two trees planted for every purchase. </p>
+                    <p class="overpass-regular my-3" style="font-size: 1.5rem;">With your support, Supernatural gives
+                        back two trees planted for every purchase. </p>
                 </div>
             </div>
         </div>
@@ -502,28 +528,29 @@
                 <div class="container p-5">
                     <h5>REUSABLE GLASS BOTTLES</h5>
                     <p class="overpass-regular">
-                        Our beautiful reusable glass bottles are designed to be <b>used over and over again</b>. 
+                        Our beautiful reusable glass bottles are designed to be <b>used over and over again</b>.
                         <br>
-                        <b>Using Supernatural eliminates 98% of your home’s plastic waste</b> from cleaning products that would otherwise wind up in our landfills and oceans.
+                        <b>Using Supernatural eliminates 98% of your home’s plastic waste</b> from cleaning products
+                        that would otherwise wind up in our landfills and oceans.
                     </p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="height: 500px;">
-                <img class="img-fluid img_object-fit"
-                      src="./assets/Reusable-Glass-Bottles.jpg">
+                <img class="img-fluid img_object-fit" src="./assets/Reusable-Glass-Bottles.jpg">
             </div>
         </div>
         <div class="row my-5">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="height: 500px;">
-                <img class="img-fluid img_object-fit"
-                      src="./assets/Reduce Carbon Emissions.jpg">
-                
+                <img class="img-fluid img_object-fit" src="./assets/Reduce Carbon Emissions.jpg">
+
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 my-auto">
                 <div class="container p-5">
                     <h5>REDUCE CARBON EMISSIONS</h5>
                     <p class="overpass-regular">
-                        Our concentrated, <b>just-add-water formulas</b> reduces carbon emissions by not shipping millions of gallons of heavy water around the world. We use recycled materials in all of our packaging. 
+                        Our concentrated, <b>just-add-water formulas</b> reduces carbon emissions by not shipping
+                        millions of gallons of heavy water around the world. We use recycled materials in all of our
+                        packaging.
                     </p>
                 </div>
             </div>
@@ -533,193 +560,200 @@
                 <div class="container p-5">
                     <h5>NON-TOXIC</h5>
                     <p class="overpass-regular">
-                        We use only natural ingredients from plants, minerals, and essential oils, which make our products safer for you, your home, and the earth.
+                        We use only natural ingredients from plants, minerals, and essential oils, which make our
+                        products safer for you, your home, and the earth.
                     </p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="height: 500px;">
-                <img class="img-fluid img_object-fit"
-                      src="./assets/Non Toxic.jpg">
+                <img class="img-fluid img_object-fit" src="./assets/Non Toxic.jpg">
             </div>
         </div>
 
         <div class="text-center">
             <a href="/" class="btn btn-primary">ADD TO CART & SAVE 35%</a>
         </div>
-        
+
     </div>
 
-<!-- Say goodbye to harsh chemicals. -->
-<div class="container-fluid padding-3rem">
-    <div class="container">
-        <h2 class="text-center">Say goodbye to harsh chemicals.
-            <br>Say hello to Supernatural.</h2>
-        <div class="spacer-lg"></div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                <h4>Supernatural Starter Kit</h4>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="img-fluid" src="./assets/stars.svg">
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 my-auto">
-                        <p class="overpass-regular mb-0"><u>Over 500 reviews</u></p>
-                    </div>
-                </div>
-                <div class="spacer-lg"></div>
-
-                <!-- Product Details -->
-                <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-2">
-                        <h6 class="dm-serif">4</h6>
-                    </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-10">
-                        <p>Supernatural resuable frosted-glass spray bottles for each suface.</p>
-                    </div>
-
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-2">
-                        <h6 class="dm-serif">4</h6>
-                    </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-10">
-                        <p>Supernatural plant powered surface concentrates:</p>
-                        <ul>
-                            <li>Counters + Granite</li>
-                            <li>Glass + Mirrors</li>
-                            <li>Bath + Tile</li>
-                            <li>Wood + Floors</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-4 my-auto">
-                        <p class="dm-serif" style="color: #ff0000; text-decoration: line-through; font-size: 35px;">
-                            $75</p>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-4 col-4 my-auto">
-                        <p class="dm-serif" style="color: #000000; font-size: 45px;">
-                            $49</p>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-4">
-                        <img class="img-fluid" src="./assets/guarantee-logo.png">
-                    </div>
-                </div>
-
-                <a href="/" class="btn btn-primary">ADD TO CART FOR 35% OFF</a>
-                <div class="spacer-sm"></div>
-                <p>or 4 interest-free installments of $13.13 by <span><img class="img-fluid"
-                            src="./assets/afterpay-logo.png"></span> <a href="/" class="small"><u>More Info</u></a>
-                </p>
-
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Third-party tested + proven -->
-<div class="container-fluid padding-3rem purple-bg">
-    <div class="container text-center">
-        <h3>Third-party tested + proven</h3>
-        <div class="spacer-md"></div>
-        <p class="text-uppercase">Supernatural is clinically proven to be as effective or more effective than big-name cleaning brands.</p>
-        <p>We've partnered with a world-leading testing and certification company, Bureau Veritas, and the results are in: the plant magic in these vials is potent and Supernatural products are proven to be as effective or more effective than big-name cleaning brands.
-            <br><br>
-            We're so confident you'll love your new cleaning ritual, but rest assured our products are backed by a 100% money-back guarantee. If you're not satisfied with your purchase, contact our customer care team at questions@supernatural.com within 30 days of purchase and we'll hook you up with a replacement or a refund.
-        </p>
-    </div>
-</div>
-
-<!-- Most cleaning products contain -->
-<div class="container-fluid padding-3rem">
-    <div class="container">
-        <div class="row-width-80 text-center">
-            <h4 class="roboto gradient-color">
-                Most cleaning products contain over 60+ toxic chemicals, but Supernatural is here to change that.
-            </h4>
-            <div class="spacer-md"></div>
-            <a href="/" class="btn btn-primary">GET THE STARTER SET FOR 35% OFF</a>
-        </div>
-    </div>
-</div>
-
-<footer>
-    <div class="container-fluid gradient-bg padding-3rem">
+    <!-- Say goodbye to harsh chemicals. -->
+    <div class="container-fluid padding-3rem">
         <div class="container">
+            <h2 class="text-center">Say goodbye to harsh chemicals.
+                <br>Say hello to Supernatural.</h2>
+            <div class="spacer-lg"></div>
             <div class="row">
-                <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <h4>Supernatural Starter Kit</h4>
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                            <h6>SHOP</h6>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <img class="img-fluid" src="./assets/stars.svg">
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 my-auto">
+                            <p class="overpass-regular mb-0"><u>Over 500 reviews</u></p>
+                        </div>
+                    </div>
+                    <div class="spacer-lg"></div>
+
+                    <!-- Product Details -->
+                    <div class="row">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                            <h6 class="dm-serif">4</h6>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-10">
+                            <p>Supernatural resuable frosted-glass spray bottles for each suface.</p>
+                        </div>
+
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                            <h6 class="dm-serif">4</h6>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-10">
+                            <p>Supernatural plant powered surface concentrates:</p>
                             <ul>
-                                <li><a href="#">All Products</a></li>
-                                <li><a href="#">Home Care</a></li>
-                                <li><a href="#">Refills</a></li>
-                                <li><a href="#">Essential Oil Blends</a></li>
-                                <li><a href="#">Gift Card</a></li>
-                            </ul>
-    
-                            <div class="spacer-md"></div>
-    
-                            <h6>SUPPORT</h6>
-                            <ul>
-                                <li><a href="#">questions@supernatural.com</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li>Counters + Granite</li>
+                                <li>Glass + Mirrors</li>
+                                <li>Bath + Tile</li>
+                                <li>Wood + Floors</li>
                             </ul>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                            <h6>OUR HOME PLANET</h6>
-                            <ul>
-                                <li><a href="#">Supernatural Being</a></li>
-                                <li><a href="#">Supernatural Home</a></li>
-                                <li><a href="#">Effectiveness</a></li>
-                            </ul>
-    
-                            <div class="spacer-md"></div>
-    
-                            <h6>LEGAL</h6>
-                            <ul>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
-                                <li><a href="#">Refund Policy</a></li>
-                            </ul>
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-4 my-auto">
+                            <p class="dm-serif" style="color: #ff0000; text-decoration: line-through; font-size: 35px;">
+                                $75</p>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                            <h6>REFERRAL PROGRAM</h6>
-                            <ul>
-                                <li><a href="#">Referral</a></li>
-                            </ul>
-    
-                            <div class="spacer-md"></div>
-    
-                            <h6>SERVICE DISCOUNTS</h6>
-                            <ul>
-                                <li><a href="#">Military Discount</a></li>
-                                <li><a href="#">Medical Worker Discount</a></li>
-                                <li><a href="#">First Responder Discount</a></li>
-                                <li><a href="#">Teacher Discount</a></li>
-                            </ul>
+                        <div class="col-lg-6 col-md-6 col-sm-4 col-4 my-auto">
+                            <p class="dm-serif" style="color: #000000; font-size: 45px;">
+                                $49</p>
                         </div>
-                    </div>                   
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+                            <img class="img-fluid" src="./assets/guarantee-logo.png">
+                        </div>
+                    </div>
+
+                    <a href="/" class="btn btn-primary">ADD TO CART FOR 35% OFF</a>
+                    <div class="spacer-sm"></div>
+                    <p>or 4 interest-free installments of $13.13 by <span><img class="img-fluid"
+                                src="./assets/afterpay-logo.png"></span> <a href="/" class="small"><u>More Info</u></a>
+                    </p>
+
                 </div>
 
-                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                    <h6>FIND US</h6>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third-party tested + proven -->
+    <div class="container-fluid padding-3rem purple-bg">
+        <div class="container text-center">
+            <h3>Third-party tested + proven</h3>
+            <div class="spacer-md"></div>
+            <p class="text-uppercase">Supernatural is clinically proven to be as effective or more effective than
+                big-name cleaning brands.</p>
+            <p>We've partnered with a world-leading testing and certification company, Bureau Veritas, and the results
+                are in: the plant magic in these vials is potent and Supernatural products are proven to be as effective
+                or more effective than big-name cleaning brands.
+                <br><br>
+                We're so confident you'll love your new cleaning ritual, but rest assured our products are backed by a
+                100% money-back guarantee. If you're not satisfied with your purchase, contact our customer care team at
+                questions@supernatural.com within 30 days of purchase and we'll hook you up with a replacement or a
+                refund.
+            </p>
+        </div>
+    </div>
+
+    <!-- Most cleaning products contain -->
+    <div class="container-fluid padding-3rem">
+        <div class="container">
+            <div class="row-width-80 text-center">
+                <h4 class="roboto gradient-color">
+                    Most cleaning products contain over 60+ toxic chemicals, but Supernatural is here to change that.
+                </h4>
+                <div class="spacer-md"></div>
+                <a href="/" class="btn btn-primary">GET THE STARTER SET FOR 35% OFF</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid gradient-bg padding-3rem">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                <h6>SHOP</h6>
+                                <ul>
+                                    <li><a href="#">All Products</a></li>
+                                    <li><a href="#">Home Care</a></li>
+                                    <li><a href="#">Refills</a></li>
+                                    <li><a href="#">Essential Oil Blends</a></li>
+                                    <li><a href="#">Gift Card</a></li>
+                                </ul>
+
+                                <div class="spacer-md"></div>
+
+                                <h6>SUPPORT</h6>
+                                <ul>
+                                    <li><a href="#">questions@supernatural.com</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                <h6>OUR HOME PLANET</h6>
+                                <ul>
+                                    <li><a href="#">Supernatural Being</a></li>
+                                    <li><a href="#">Supernatural Home</a></li>
+                                    <li><a href="#">Effectiveness</a></li>
+                                </ul>
+
+                                <div class="spacer-md"></div>
+
+                                <h6>LEGAL</h6>
+                                <ul>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Refund Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                <h6>REFERRAL PROGRAM</h6>
+                                <ul>
+                                    <li><a href="#">Referral</a></li>
+                                </ul>
+
+                                <div class="spacer-md"></div>
+
+                                <h6>SERVICE DISCOUNTS</h6>
+                                <ul>
+                                    <li><a href="#">Military Discount</a></li>
+                                    <li><a href="#">Medical Worker Discount</a></li>
+                                    <li><a href="#">First Responder Discount</a></li>
+                                    <li><a href="#">Teacher Discount</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        <h6>FIND US</h6>
                         <ul>
                             <li><a href="#">Facebook</a></li>
                             <li><a href="#">Instagram</a></li>
-                        </ul>            
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container text-center mt-3">
-            <small><a href="/" class="px-2">PRIVACY POLICY</a>  |  <a href="/" class="px-2">TERMS OF SERVICE</a></small>
+            <div class="container text-center mt-3">
+                <small><a href="/" class="px-2">PRIVACY POLICY</a> | <a href="/" class="px-2">TERMS OF
+                        SERVICE</a></small>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
